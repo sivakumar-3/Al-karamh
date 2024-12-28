@@ -1,0 +1,47 @@
+[
+  {
+    "id": 1,
+    "name": "A herbal mixture that boosts immunity and repels viruses and bacteria for livestock",
+    "image": "/images/products/A_herbal_mixture.jpg"
+  },
+  {
+    "id": 2,
+    "name": "Bean hay",
+    "image": "/images/products/Bean_hay.jpg"
+  },
+  {
+    "id": 3,
+    "name": "Dates for livestock",
+    "image": "/images/products/Dates_for_livestock.jpg"
+  },
+  {
+    "id": 4,
+    "name": "Lentil hay",
+    "image": "/images/products/Lentil_hay.jpg"
+  },
+  {
+    "id": 5,
+    "name": "Pakistani bean hay is first class",
+    "image": "/images/products/Pakistani_bean_hay.jpg"
+  },
+  {
+    "id": 6,
+    "name": "Pakistani wheat straw",
+    "image": "/images/products/Pakistani_wheat_straw.jpg"
+  },
+  {
+    "id": 7,
+    "name": "Rhodes Pakistani first class",
+    "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
+  },
+  {
+    "id": 8,
+    "name": "Timothy",
+    "image": "/images/products/Timothy_Feed.png"
+  },
+  {
+    "id": 9,
+    "name": "My classes",
+    "image": "/images/products/My_classes.jpg"
+  }
+]

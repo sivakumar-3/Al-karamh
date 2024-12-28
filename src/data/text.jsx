@@ -1,0 +1,1 @@
+import img from '../images/products/A_herbal_mixture.jpg'
