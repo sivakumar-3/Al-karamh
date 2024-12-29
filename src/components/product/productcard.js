@@ -26,8 +26,8 @@ const ProductCard = ({ product }) => {
       <div>
         <div className="relative pb-[75%] mb-4">
           <img
-            src={product?.image}
-            alt={product?.name}
+            src={product.image}
+            alt={product.name}
             className="absolute top-0 left-0 w-full h-full object-cover rounded-xl object-center"
           />
         </div>
