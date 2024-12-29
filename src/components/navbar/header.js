@@ -28,7 +28,7 @@ export default function Header() {
         {/* Language Toggle */}
         <button
           onClick={toggleLanguage}
-          className="text-white hover:underline text-base"
+          className="hover:underline text-base bg-white rounded-full text-green-800 px-5 py-0.5 flex items-center justify-center"
           aria-label={language === 'en' ? 'Switch to Arabic' : 'Switch to English'}
         >
           {language === 'en' ? 'عربي' : 'English'}
