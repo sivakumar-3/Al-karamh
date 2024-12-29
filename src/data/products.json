@@ -1,47 +1,250 @@
-[
-  {
-    "id": 1,
-    "name": "A herbal mixture that boosts immunity and repels viruses and bacteria for livestock",
-    "image": "/images/products/A_herbal_mixture.jpg"
-  },
-  {
-    "id": 2,
-    "name": "Bean hay",
-    "image": "/images/products/Bean_hay.jpg"
-  },
-  {
-    "id": 3,
-    "name": "Dates for livestock",
-    "image": "/images/products/Dates_for_livestock.jpg"
-  },
-  {
-    "id": 4,
-    "name": "Lentil hay",
-    "image": "/images/products/Lentil_hay.jpg"
-  },
-  {
-    "id": 5,
-    "name": "Pakistani bean hay is first class",
-    "image": "/images/products/Pakistani_bean_hay.jpg"
-  },
-  {
-    "id": 6,
-    "name": "Pakistani wheat straw",
-    "image": "/images/products/Pakistani_wheat_straw.jpg"
-  },
-  {
-    "id": 7,
-    "name": "Rhodes Pakistani first class",
-    "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
-  },
-  {
-    "id": 8,
-    "name": "Timothy",
-    "image": "/images/products/Timothy_Feed.png"
-  },
-  {
-    "id": 9,
-    "name": "My classes",
-    "image": "/images/products/My_classes.jpg"
+{
+  "languages": {
+    "en": {
+      "homePageContent": {
+        "aboutUs": "Stores of Al Karama Trading Company LLC specializes in providing high-quality animal feed products. As a trusted name in the industry, the company is dedicated to supporting the agricultural and livestock sectors with a wide range of nutritious and reliable feed solutions. With a commitment to excellence and customer satisfaction, they ensure that their products meet the highest standards, catering to the diverse needs of farmers and animal caretakers across the region.",
+        "whatWeOffer": [
+          {
+            "title": "Shipping",
+            "description": "We offer reliable and timely delivery services to ensure your animal feed products reach you in perfect condition. Customer satisfaction is our top priority in every shipment."
+          },
+          {
+            "title": "Easy Search",
+            "description": "Quickly find the animal feed products you need with our user-friendly search tools, designed to save you time and effort."
+          },
+          {
+            "title": "Quality Products",
+            "description": "We provide premium animal feed products that meet the highest standards, ensuring the best nutrition for your livestock."
+          },
+          {
+            "title": "On-time Delivery",
+            "description": "We guarantee prompt and dependable delivery, ensuring your orders arrive exactly when you need them."
+          }
+        ],
+        "customerReviews": [
+          {
+            "name": "Ahmed R.",
+            "review": "High-quality feed and excellent service! My livestock are thriving."
+          },
+          {
+            "name": "Fatima A.",
+            "review": "Reliable delivery every time. Great customer support too!"
+          },
+          {
+            "name": "Omar K.",
+            "review": "The search tool is super convenient, and the products are top-notch."
+          },
+          {
+            "name": "Layla H.",
+            "review": "Affordable prices with uncompromised quality. Highly recommend!"
+          }
+        ],
+        "contactInfo": {
+          "email": "hamad@alkaramh.com",
+          "phone": "+974 5108 8899",
+          "address": "Al Karam Store, Mazzraty Compound, Abu Nakhla, Street 646, Building 23, Doha, Qatar"
+        }
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "A herbal mixture that boosts immunity and repels viruses and bacteria for livestock",
+          "image": "/images/products/A_herbal_mixture.jpg"
+        },
+        {
+          "id": 2,
+          "name": "Bean hay",
+          "image": "/images/products/Bean_hay.jpg"
+        },
+        {
+          "id": 3,
+          "name": "Dates for livestock",
+          "image": "/images/products/Dates_for_livestock.jpg"
+        },
+        {
+          "id": 4,
+          "name": "Lentil hay",
+          "image": "/images/products/Lentil_hay.jpg"
+        },
+        {
+          "id": 5,
+          "name": "Pakistani bean hay is first class",
+          "image": "/images/products/Pakistani_bean_hay.jpg"
+        },
+        {
+          "id": 6,
+          "name": "Pakistani wheat straw",
+          "image": "/images/products/Pakistani_wheat_straw.jpg"
+        },
+        {
+          "id": 7,
+          "name": "Rhodes Pakistani first class",
+          "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
+        },
+        {
+          "id": 8,
+          "name": "Timothy",
+          "image": "/images/products/Timothy_Feed.png"
+        },
+        {
+          "id": 9,
+          "name": "My classes",
+          "image": "/images/products/My_classes.jpg"
+        },
+        {
+          "id": 10,
+          "name": "Sudanese clover",
+          "image": "/images/products/Sudanese_clover.jpg"
+        },
+        {
+          "id": 11,
+          "name": "Mineral salts and vitamins",
+          "image": "/images/products/Mineral_salts_and_vitamins.jpg"
+        },
+        {
+          "id": 12,
+          "name": "American clover",
+          "image": "/images/products/American_clover.jpg"
+        },
+        {
+          "id": 13,
+          "name": "Himalayan salt",
+          "image": "/images/products/Himalayan_salt.jpg"
+        },
+        {
+          "id": 14,
+          "name": "Crushed Himalayan salt",
+          "image": "/images/products/Crushed_Himalayan_salt.jpg"
+        },
+        {
+          "id": 15,
+          "name": "Sudanese clover bag filling",
+          "image": "/images/products/Clover_bag.jpg"
+        }
+      ]
+    },
+    "ar": {
+      "homePageContent": {
+        "aboutUs": "مخازن شركة الكرامة التجارية ذ.م.م متخصصة في تقديم منتجات الأعلاف الحيوانية عالية الجودة. باعتبارها اسمًا موثوقًا به في الصناعة، تلتزم الشركة بدعم قطاعي الزراعة والثروة الحيوانية بمجموعة واسعة من حلول الأعلاف المغذية والموثوقة. ومع الالتزام بالتميز ورضا العملاء، فإنهم يضمنون أن منتجاتهم تلبي أعلى المعايير، وتلبي الاحتياجات المتنوعة للمزارعين ومقدمي الرعاية الحيوانية في جميع أنحاء المنطقة.",
+        "whatWeOffer": [
+          {
+            "title": "شحن",
+            "description": "نحن نقدم خدمات توصيل موثوقة وفي الوقت المناسب لضمان وصول منتجات الأعلاف الحيوانية إليك في حالة ممتازة. رضا العملاء هو أولويتنا القصوى في كل شحنة."
+          },
+          {
+            "title": "بحث سهل",
+            "description": "يمكنك العثور بسرعة على منتجات الأعلاف الحيوانية التي تحتاجها باستخدام أدوات البحث سهلة الاستخدام، والمصممة لتوفير الوقت والجهد."
+          },
+          {
+            "title": "منتجات عالية الجودة",
+            "description": "نحن نقدم منتجات أعلاف حيوانية متميزة تلبي أعلى المعايير، مما يضمن أفضل تغذية للماشية الخاصة بك."
+          },
+          {
+            "title": "التسليم في الوقت المحدد",
+            "description": "نحن نضمن التسليم السريع والموثوق، مما يضمن وصول طلباتك بالضبط عندما تحتاج إليها."
+          }
+        ],
+        "customerReviews": [
+          {
+            "name": "Ahmed R.",
+            "review": "أعلاف عالية الجودة وخدمة ممتازة! ماشيتي تزدهر."
+          },
+          {
+            "name": "Fatima A.",
+            "review": "تسليم موثوق في كل مرة. دعم عملاء رائع أيضًا!"
+          },
+          {
+            "name": "Omar K.",
+            "review": "أداة البحث مريحة للغاية، والمنتجات من الدرجة الأولى."
+          },
+          {
+            "name": "Layla H.",
+            "review": "أسعار معقولة مع جودة لا تقبل المساومة. نوصي بشدة!"
+          }
+        ],
+        "contactInfo": {
+          "email": "hamad@alkaramh.com",
+          "phone": "+974 5108 8899",
+          "address": "مخزن الكرامة، مجمع مزرعتي، أبو نخلة، شارع 646، مبنى 23، الدوحة، قطر"
+        }
+      },
+      "products": [
+        {
+          "id": 1,
+          "name": "خليط عشبي يعزز المناعة ويطرد الفيروسات والبكتيريا للماشية",
+          "image": "/images/products/A_herbal_mixture.jpg"
+        },
+        {
+          "id": 2,
+          "name": "تبن الفول",
+          "image": "/images/products/Bean_hay.jpg"
+        },
+        {
+          "id": 3,
+          "name": "تمور للماشية",
+          "image": "/images/products/Dates_for_livestock.jpg"
+        },
+        {
+          "id": 4,
+          "name": "تبن العدس",
+          "image": "/images/products/Lentil_hay.jpg"
+        },
+        {
+          "id": 5,
+          "name": "تبن الفول الباكستاني من الدرجة الأولى",
+          "image": "/images/products/Pakistani_bean_hay.jpg"
+        },
+        {
+          "id": 6,
+          "name": "قش القمح الباكستاني",
+          "image": "/images/products/Pakistani_wheat_straw.jpg"
+        },
+        {
+          "id": 7,
+          "name": "رودس باكستاني من الدرجة الأولى",
+          "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
+        },
+        {
+          "id": 8,
+          "name": "تيموثي",
+          "image": "/images/products/Timothy_Feed.png"
+        },
+        {
+          "id": 9,
+          "name": "صفوفي",
+          "image": "/images/products/My_classes.jpg"
+        },
+        {
+          "id": 10,
+          "name": "برسيم سوداني",
+          "image": "/images/products/Sudanese_clover.jpg"
+        },
+        {
+          "id": 11,
+          "name": "أملاح معدنية وفيتامينات",
+          "image": "/images/products/Mineral_salts_and_vitamins.jpg"
+        },
+        {
+          "id": 12,
+          "name": "برسيم أمريكي",
+          "image": "/images/products/American_clover.jpg"
+        },
+        {
+          "id": 13,
+          "name": "ملح الهيمالايا",
+          "image": "/images/products/Himalayan_salt.jpg"
+        },
+        {
+          "id": 14,
+          "name": "ملح الهيمالايا المسحوق",
+          "image": "/images/products/Crushed_Himalayan_salt.jpg"
+        },
+        {
+          "id": 15,
+          "name": "تعبئة أكياس برسيم سوداني",
+          "image": "/images/products/Clover_bag.jpg"
+        }
+      ]
+    }
   }
-]
+}

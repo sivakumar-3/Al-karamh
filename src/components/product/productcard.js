@@ -1,8 +1,11 @@
 import React, { useState } from "react";
 import HashLoader from "react-spinners/HashLoader";
+import { useLanguage } from "./../LanguageContext";
 
 const ProductCard = ({ product }) => {
+  const { language } = useLanguage();
   const [addingToCart, setAddingToCart] = useState(false);
+  const selectedLanguage = language || "en";
 
   const handleOrderNow = () => {
     setAddingToCart(true);
@@ -14,6 +17,9 @@ const ProductCard = ({ product }) => {
       window.open(whatsappLink, "_blank");
     }, 2000);
   };
+
+  const orderNowText =
+    selectedLanguage === "en" ? "Order Now" : "اطلب الآن";
 
   return (
     <div className="bg-white rounded-lg overflow-hidden shadow-xl p-4">
@@ -42,7 +48,7 @@ const ProductCard = ({ product }) => {
               <HashLoader color="#ffffff" size={24} />
             </div>
           ) : (
-            <span>Order Now</span>
+            <span>{orderNowText}</span>
           )}
         </button>
       </div>
