@@ -81,14 +81,14 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">{t.customerCare}</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
               <li>
-                <Link to="/contact" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
+                <a href="tel:+97451088899" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
                   {t.call}
-                </Link>
+                </a>
               </li>
               <li>
-                <Link to="/contact" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
+                <a href="mailto:hamad@alkaramh.com" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
                   {t.email}
-                </Link>
+                </a>
               </li>
             </ul>
           </div>
