@@ -63,8 +63,8 @@
         },
         {
           "id": 4,
-          "name": "Lentil hay",
-          "image": "/images/products/Lentil_hay.jpg"
+          "name": "Lentil Straw",
+          "image": "/images/products/lentil_straw.jpg"
         },
         {
           "id": 5,
@@ -73,23 +73,23 @@
         },
         {
           "id": 6,
-          "name": "Pakistani wheat straw",
-          "image": "/images/products/Pakistani_wheat_straw.jpg"
+          "name": "wheat",
+          "image": "/images/products/wheat.jpg"
         },
         {
           "id": 7,
-          "name": "Rhodes Pakistani first class",
-          "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
+          "name": "Rodas Pakistan",
+          "image": "/images/products/Rodas_Pakistan.jpg"
         },
         {
           "id": 8,
-          "name": "Timothy",
+          "name": "Timothy-Feed",
           "image": "/images/products/Timothy_Feed.png"
         },
         {
           "id": 9,
-          "name": "My classes",
-          "image": "/images/products/My_classes.jpg"
+          "name": "Rodas Sudan",
+          "image": "/images/products/Rodas_sudan.jpg"
         },
         {
           "id": 10,
@@ -103,8 +103,8 @@
         },
         {
           "id": 12,
-          "name": "American clover",
-          "image": "/images/products/American_clover.jpg"
+          "name": "Peanuts Straw",
+          "image": "/images/products/Peanuts_straw.jpg"
         },
         {
           "id": 13,
@@ -118,8 +118,18 @@
         },
         {
           "id": 15,
-          "name": "Sudanese clover bag filling",
+          "name": "Clover bag",
           "image": "/images/products/Clover_bag.jpg"
+        },
+        {
+          "id": 16,
+          "name": "Rice Straw",
+          "image": "/images/products/Rice_straw.jpg"
+        },
+        {
+          "id": 17,
+          "name": "Rodas Bag",
+          "image": "/images/products/Rodas_bag.jpg"
         }
       ]
     },
@@ -171,7 +181,7 @@
       "products": [
         {
           "id": 1,
-          "name": "خليط عشبي يعزز المناعة ويطرد الفيروسات والبكتيريا للماشية",
+          "name": "خلطة عشبية تعزز المناعة وتطرد الفيروسات والبكتيريا للماشية",
           "image": "/images/products/A_herbal_mixture.jpg"
         },
         {
@@ -181,38 +191,38 @@
         },
         {
           "id": 3,
-          "name": "تمور للماشية",
+          "name": "تمر للماشية",
           "image": "/images/products/Dates_for_livestock.jpg"
         },
         {
           "id": 4,
-          "name": "تبن العدس",
-          "image": "/images/products/Lentil_hay.jpg"
+          "name": "قش العدس",
+          "image": "/images/products/lentil_straw.jpg"
         },
         {
           "id": 5,
-          "name": "تبن الفول الباكستاني من الدرجة الأولى",
+          "name": "تبن فول باكستاني درجة أولى",
           "image": "/images/products/Pakistani_bean_hay.jpg"
         },
         {
           "id": 6,
-          "name": "قش القمح الباكستاني",
-          "image": "/images/products/Pakistani_wheat_straw.jpg"
+          "name": "قمح",
+          "image": "/images/products/wheat.jpg"
         },
         {
           "id": 7,
-          "name": "رودس باكستاني من الدرجة الأولى",
-          "image": "/images/products/Rhodes_Pakistani_first_class.jpg"
+          "name": "رودس باكستان",
+          "image": "/images/products/Rodas_Pakistan.jpg"
         },
         {
           "id": 8,
-          "name": "تيموثي",
+          "name": "تيموثي علف",
           "image": "/images/products/Timothy_Feed.png"
         },
         {
           "id": 9,
-          "name": "صفوفي",
-          "image": "/images/products/My_classes.jpg"
+          "name": "رودس السودان",
+          "image": "/images/products/Rodas_sudan.jpg"
         },
         {
           "id": 10,
@@ -226,8 +236,8 @@
         },
         {
           "id": 12,
-          "name": "برسيم أمريكي",
-          "image": "/images/products/American_clover.jpg"
+          "name": "قش الفول السوداني",
+          "image": "/images/products/Peanuts_straw.jpg"
         },
         {
           "id": 13,
@@ -236,13 +246,23 @@
         },
         {
           "id": 14,
-          "name": "ملح الهيمالايا المسحوق",
+          "name": "ملح الهيمالايا المطحون",
           "image": "/images/products/Crushed_Himalayan_salt.jpg"
         },
         {
           "id": 15,
-          "name": "تعبئة أكياس برسيم سوداني",
+          "name": "كيس برسيم",
           "image": "/images/products/Clover_bag.jpg"
+        },
+        {
+          "id": 16,
+          "name": "قش الأرز",
+          "image": "/images/products/Rice_straw.jpg"
+        },
+        {
+          "id": 17,
+          "name": "كيس رودس",
+          "image": "/images/products/Rodas_bag.jpg"
         }
       ]
     }

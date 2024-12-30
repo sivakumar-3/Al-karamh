@@ -6,7 +6,7 @@ import { useLanguage } from "./../LanguageContext";
 
 const translations = {
   en: {
-    companyName: "Stores of Al Karamh Trading Company LLC",
+    companyName: "Stores of Al Karamh Trading Company LLC",
     slogan: "Purely Harvested, Perfectly Delivered",
     contactInfo: "Contact Info",
     address:
@@ -30,7 +30,7 @@ const translations = {
       "مخزن الكرامة، مجمع مزرعتي، أبو نخلة، شارع 646، مبنى 23، الدوحة، قطر",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
-    products:"المنتجات المميزة",
+    products: "المنتجات المميزة",
     customerCare: "رعاية العملاء",
     call: "اتصال",
     pages: "الصفحات",
@@ -47,6 +47,9 @@ export default function Footer() {
 
   const content =
     productData.languages[language] || productData.languages["en"];
+
+  // Limit to the first 5 products
+  const featuredProducts = content.products.slice(0, 5);
 
   return (
     <footer className="bg-green-800 text-white">
@@ -94,7 +97,7 @@ export default function Footer() {
           <div className="mt-4 sm:mt-0">
             <h3 className="text-xl font-semibold mb-4">{t.products}</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
-              {content.products.map((product) => (
+              {featuredProducts.map((product) => (
                 <li key={product.id}>
                   <Link
                     to="/products"
