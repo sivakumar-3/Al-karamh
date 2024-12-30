@@ -11,7 +11,7 @@ const ProductCard = ({ product }) => {
     setAddingToCart(true);
     setTimeout(() => {
       setAddingToCart(false);
-      const whatsappLink = `https://wa.me/+97451088899?text=Hello,%20I%20would%20like%20to%20place%20an%20order%20for%20${encodeURIComponent(
+      const whatsappLink = `https://wa.me/+97466261000?text=Hello,%20I%20would%20like%20to%20place%20an%20order%20for%20${encodeURIComponent(
         product.name
       )}.`;
       window.open(whatsappLink, "_blank");
