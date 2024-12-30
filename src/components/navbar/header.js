@@ -14,37 +14,31 @@ export default function Header() {
   ];
 
   return (
-    <header className="bg-green-800 text-white py-2 px-4 flex flex-col sm:flex-row justify-between items-center space-y-2 sm:space-y-0">
-      {/* Email */}
-      <div className="flex items-center space-x-2 text-sm">
-        <Mail className="h-4 w-4" />
-        <a href="mailto:hamad@alkaramh.com" className="hover:underline">
-          hamad@alkaramh.com
-        </a>
+    <header className="bg-green-800 text-white py-2 px-4 flex justify-between items-center flex-col sm:flex-row sm:space-x-4">
+      {/* Left side: Email and one Phone Number */}
+      <div className="flex flex-col sm:flex-row items-center sm:space-x-4 sm:space-y-0 space-y-2 text-sm">
+        <div className="flex items-center space-x-2">
+          <Mail className="h-4 w-4" />
+          <a href="mailto:hamad@alkaramh.com" className="hover:underline">
+            hamad@alkaramh.com
+          </a>
+        </div>
+        <div className="flex items-center space-x-2">
+          <Phone className="h-4 w-4" />
+          <a
+            href={`tel:${phoneNumbers[0].replace(/\s+/g, "")}`}
+            className="hover:underline"
+          >
+            {phoneNumbers[0]}
+          </a>
+        </div>
       </div>
 
-      {/* Phone Numbers */}
-      <div className="flex flex-wrap items-center justify-center space-x-4 text-sm">
-        {phoneNumbers.map((number) => (
-          <div key={number} className="flex items-center space-x-2">
-            <Phone className="h-4 w-4" />
-            <a
-              href={`tel:${number.replace(/\s+/g, "")}`}
-              className="hover:underline"
-            >
-              {number}
-            </a>
-          </div>
-        ))}
-      </div>
-
-      {/* Language Toggle */}
+      {/* Right side: Language Toggle Button */}
       <button
         onClick={toggleLanguage}
-        className="hover:underline text-base bg-white rounded-full text-green-800 px-5 py-1"
-        aria-label={
-          language === "en" ? "Switch to Arabic" : "Switch to English"
-        }
+        className="hover:underline text-base bg-white rounded-full text-green-800 px-5 py-1 mt-2 sm:mt-0"
+        aria-label={language === "en" ? "Switch to Arabic" : "Switch to English"}
       >
         {language === "en" ? "عربي" : "English"}
       </button>
