@@ -1,8 +1,8 @@
-import React from 'react';
+import React from "react";
 import { Mail, Phone, MapPin } from "lucide-react";
-import Footer from '../components/footer/footer';
-import Nav from '../components/navbar/nav';
-import Header from '../components/navbar/header';
+import Footer from "../components/footer/footer";
+import Nav from "../components/navbar/nav";
+import Header from "../components/navbar/header";
 import { useLanguage } from "./../components/LanguageContext";
 
 export default function ContactPage() {
@@ -28,6 +28,13 @@ export default function ContactPage() {
     },
   };
 
+  const phoneNumbers = [
+    "+974 5108 8899",
+    "+974 66261000",
+    "+974 55545664",
+    "+974 66269262",
+  ];
+
   const content = translations[selectedLanguage];
 
   return (
@@ -40,6 +47,7 @@ export default function ContactPage() {
             <section className="mb-8">
               <h2 className="text-2xl font-bold mb-4">{content.contactWayTitle}</h2>
               <div className="space-y-4">
+                {/* Email */}
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-purple-100 flex items-center justify-center">
                     <Mail className="text-purple-500" />
@@ -49,15 +57,26 @@ export default function ContactPage() {
                     <p className="text-gray-600">hamad@alkaramh.com</p>
                   </div>
                 </div>
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center">
-                    <Phone className="text-pink-500" />
-                  </div>
-                  <div>
-                    <p className="font-semibold">{content.contactPhone}</p>
-                    <p className="text-gray-600">+974 5108 8899</p>
-                  </div>
+
+                {/* Phone Numbers */}
+                <div>
+                  <p className="font-semibold mb-2">{content.contactPhone}</p>
+                  {phoneNumbers.map((number) => (
+                    <div key={number} className="flex items-center gap-4 mb-2">
+                      <div className="w-10 h-10 rounded-full bg-pink-100 flex items-center justify-center">
+                        <Phone className="text-pink-500" />
+                      </div>
+                      <a
+                        href={`tel:${number.replace(/\s+/g, "")}`}
+                        className="text-gray-600 hover:underline"
+                      >
+                        {number}
+                      </a>
+                    </div>
+                  ))}
                 </div>
+
+                {/* Address */}
                 <div className="flex items-center gap-4">
                   <div className="w-10 h-10 rounded-full bg-teal-100 flex items-center justify-center">
                     <MapPin className="text-teal-500" />
@@ -70,6 +89,8 @@ export default function ContactPage() {
               </div>
             </section>
           </div>
+
+          {/* Google Map */}
           <div className="md:w-1/2">
             <div className="relative w-full h-[300px] md:h-[450px]">
               <iframe

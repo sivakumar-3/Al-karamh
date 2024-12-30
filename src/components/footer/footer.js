@@ -6,14 +6,14 @@ import { useLanguage } from "./../LanguageContext";
 
 const translations = {
   en: {
-    companyName: "Stores of Al Karama Trading Company LLC",
+    companyName: "Stores of Al Karamh Trading Company LLC",
     slogan: "Purely Harvested, Perfectly Delivered",
     contactInfo: "Contact Info",
     address:
       "Al Karamah Store, My Farm Complex, Abu Nakhla, Street 646, Building 23, Doha, Qatar",
     email: "Email",
     phone: "Phone",
-    products: "Our Products",
+    products: "Featured products",
     customerCare: "Customer Care",
     call: "Call",
     pages: "Pages",
@@ -30,7 +30,7 @@ const translations = {
       "مخزن الكرامة، مجمع مزرعتي، أبو نخلة، شارع 646، مبنى 23، الدوحة، قطر",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
-    products: "منتجاتنا",
+    products:"المنتجات المميزة",
     customerCare: "رعاية العملاء",
     call: "اتصال",
     pages: "الصفحات",

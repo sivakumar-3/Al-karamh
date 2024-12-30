@@ -2,7 +2,7 @@
   "languages": {
     "en": {
       "homePageContent": {
-        "aboutUs": "Stores of Al Karama Trading Company LLC specializes in providing high-quality animal feed products. As a trusted name in the industry, the company is dedicated to supporting the agricultural and livestock sectors with a wide range of nutritious and reliable feed solutions. With a commitment to excellence and customer satisfaction, they ensure that their products meet the highest standards, catering to the diverse needs of farmers and animal caretakers across the region.",
+        "aboutUs": "Stores of Al Karamh Trading Company LLC specializes in providing high-quality animal feed products. As a trusted name in the industry, the company is dedicated to supporting the agricultural and livestock sectors with a wide range of nutritious and reliable feed solutions. With a commitment to excellence and customer satisfaction, they ensure that their products meet the highest standards, catering to the diverse needs of farmers and animal caretakers across the region.",
         "whatWeOffer": [
           {
             "title": "Shipping",
@@ -42,7 +42,7 @@
         "contactInfo": {
           "email": "hamad@alkaramh.com",
           "phone": "+974 5108 8899",
-          "address": "Al Karam Store, Mazzraty Compound, Abu Nakhla, Street 646, Building 23, Doha, Qatar"
+          "address": "Al Karamh Store, Mazzraty Compound, Abu Nakhla, Street 646, Building 23, Doha, Qatar"
         }
       },
       "products": [
@@ -125,7 +125,7 @@
     },
     "ar": {
       "homePageContent": {
-        "aboutUs": "مخازن شركة الكرامة التجارية ذ.م.م متخصصة في تقديم منتجات الأعلاف الحيوانية عالية الجودة. باعتبارها اسمًا موثوقًا به في الصناعة، تلتزم الشركة بدعم قطاعي الزراعة والثروة الحيوانية بمجموعة واسعة من حلول الأعلاف المغذية والموثوقة. ومع الالتزام بالتميز ورضا العملاء، فإنهم يضمنون أن منتجاتهم تلبي أعلى المعايير، وتلبي الاحتياجات المتنوعة للمزارعين ومقدمي الرعاية الحيوانية في جميع أنحاء المنطقة.",
+        "aboutUs": "متاجر شركة الكرامة التجارية ذ.م.م متخصصة في توفير منتجات علف الحيوانات عالية الجودة. كاسم موثوق في الصناعة، تكرس الشركة جهودها لدعم قطاعات الزراعة والثروة الحيوانية من خلال مجموعة واسعة من حلول الأعلاف المغذية والموثوقة. مع التزامها بالتميز ورضا العملاء، تضمن الشركة أن تلبي منتجاتها أعلى المعايير، وتلبي الاحتياجات المتنوعة للمزارعين ومقدمي الرعاية للحيوانات في جميع أنحاء المنطقة.",
         "whatWeOffer": [
           {
             "title": "شحن",
