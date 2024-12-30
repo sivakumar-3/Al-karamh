@@ -1,15 +1,16 @@
 import { Facebook, Twitter, Instagram } from "lucide-react";
 import { Link } from "react-router-dom";
-import defaultLogo from '../../images/logo.png';
-import productData from '../../data/products.json';
-import { useLanguage } from './../LanguageContext';
+import defaultLogo from "../../images/logo.png";
+import productData from "../../data/products.json";
+import { useLanguage } from "./../LanguageContext";
 
 const translations = {
   en: {
     companyName: "Stores of Al Karama Trading Company LLC",
     slogan: "Purely Harvested, Perfectly Delivered",
     contactInfo: "Contact Info",
-    address: "Al Karamah Store, My Farm Complex, Abu Nakhla, Street 646, Building 23, Doha, Qatar",
+    address:
+      "Al Karamah Store, My Farm Complex, Abu Nakhla, Street 646, Building 23, Doha, Qatar",
     email: "Email",
     phone: "Phone",
     products: "Our Products",
@@ -25,7 +26,8 @@ const translations = {
     companyName: "متاجر شركة الكرامة التجارية ذ.م.م",
     slogan: "محصود بشكل طبيعي ، يتم تسليمه بشكل مثالي",
     contactInfo: "معلومات الاتصال",
-    address: "مخزن الكرامة، مجمع مزرعتي، أبو نخلة، شارع 646، مبنى 23، الدوحة، قطر",
+    address:
+      "مخزن الكرامة، مجمع مزرعتي، أبو نخلة، شارع 646، مبنى 23، الدوحة، قطر",
     email: "البريد الإلكتروني",
     phone: "الهاتف",
     products: "منتجاتنا",
@@ -43,7 +45,8 @@ export default function Footer() {
   const { language } = useLanguage();
   const t = translations[language] || translations.en;
 
-  const content = productData.languages[language] || productData.languages['en'];
+  const content =
+    productData.languages[language] || productData.languages["en"];
 
   return (
     <footer className="bg-green-800 text-white">
@@ -51,16 +54,40 @@ export default function Footer() {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12">
           <div className="space-y-6 col-span-1 sm:col-span-2 lg:col-span-1">
             <div className="flex items-center space-x-3">
-              <img src={defaultLogo} alt="Logo" className="max-h-24 max-w-24 object-contain bg-white p-2 rounded-full" />
-              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">{t.companyName}</h2>
+              <img
+                src={defaultLogo}
+                alt="Logo"
+                className="max-h-24 max-w-24 object-contain bg-white p-2 rounded-full"
+              />
+              <h2 className="text-2xl sm:text-3xl font-bold tracking-tight">
+                {t.companyName}
+              </h2>
             </div>
-            <p className="text-base sm:text-lg font-medium italic">{t.slogan}</p>
+            <p className="text-base sm:text-lg font-medium italic">
+              {t.slogan}
+            </p>
 
             <div className="space-y-2">
               <h3 className="font-semibold text-lg">{t.contactInfo}</h3>
               <p className="leading-relaxed text-sm">{t.address}</p>
-              <p className="text-base leading-relaxed">{content.homePageContent.contactInfo?.email || t.email}</p>
-              <p className="text-base leading-relaxed">{content.homePageContent.contactInfo?.phone || t.phone}</p>
+              <p className="text-base leading-relaxed">
+                {content.homePageContent.contactInfo?.email || t.email}
+              </p>
+              {[
+                "+974 51088899",
+                "+974 66261000",
+                "+974 55545664",
+                "+974 66269262",
+              ].map((number) => (
+                <p key={number} className="text-base leading-relaxed">
+                  <a
+                    href={`tel:${number.replace(/\s+/g, "")}`}
+                    className="hover:text-[#4D7C0F] transition-colors duration-200"
+                  >
+                    {number}
+                  </a>
+                </p>
+              ))}
             </div>
           </div>
 
@@ -69,7 +96,10 @@ export default function Footer() {
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
               {content.products.map((product) => (
                 <li key={product.id}>
-                  <Link to="/products" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
+                  <Link
+                    to="/products"
+                    className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                  >
                     {product.name}
                   </Link>
                 </li>
@@ -81,12 +111,10 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">{t.customerCare}</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
               <li>
-                <a href="tel:+97451088899" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
-                  {t.call}
-                </a>
-              </li>
-              <li>
-                <a href="mailto:hamad@alkaramh.com" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">
+                <a
+                  href="mailto:hamad@alkaramh.com"
+                  className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                >
                   {t.email}
                 </a>
               </li>
@@ -97,13 +125,28 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">{t.pages}</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
               <li>
-                <Link to="/" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">{t.home}</Link>
+                <Link
+                  to="/"
+                  className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                >
+                  {t.home}
+                </Link>
               </li>
               <li>
-                <Link to="/products" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">{t.productsPage}</Link>
+                <Link
+                  to="/products"
+                  className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                >
+                  {t.productsPage}
+                </Link>
               </li>
               <li>
-                <Link to="/contact" className="text-base hover:text-[#4D7C0F] transition-colors duration-200">{t.contact}</Link>
+                <Link
+                  to="/contact"
+                  className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                >
+                  {t.contact}
+                </Link>
               </li>
             </ul>
           </div>
@@ -114,13 +157,28 @@ export default function Footer() {
             &copy; 2024 {t.companyName} - {t.copyright}
           </p>
           <div className="flex space-x-6">
-            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#4D7C0F] transition-colors duration-200">
+            <a
+              href="https://www.facebook.com/share/1CwyqPqktn/?mibextid=wwXIfr"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#4D7C0F] transition-colors duration-200"
+            >
               <Facebook size={24} />
             </a>
-            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#4D7C0F] transition-colors duration-200">
+            <a
+              href="https://x.com/karamh_al?s=11&t=sERtC0Gw0eM9kK0iawx6aA"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#4D7C0F] transition-colors duration-200"
+            >
               <Twitter size={24} />
             </a>
-            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer" className="hover:text-[#4D7C0F] transition-colors duration-200">
+            <a
+              href="https://www.instagram.com/al_karamh/profilecard/?igsh=d3k3a2E2czAxaHJ6"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="hover:text-[#4D7C0F] transition-colors duration-200"
+            >
               <Instagram size={24} />
             </a>
           </div>
