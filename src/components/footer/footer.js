@@ -49,7 +49,7 @@ export default function Footer() {
     productData.languages[language] || productData.languages["en"];
 
   // Limit to the first 5 products
-  const featuredProducts = content.products.slice(0, 5);
+  const featuredProducts = content.products.slice(5, 10);
 
   return (
     <footer className="bg-green-800 text-white">
