@@ -6,12 +6,7 @@ export default function Header() {
   const { language, toggleLanguage } = useLanguage();
 
   // Array of phone numbers for cleaner and dynamic handling
-  const phoneNumbers = [
-    "+974 51088899",
-    "+974 66261000",
-    "+974 55545664",
-    "+974 66269262",
-  ];
+  const phoneNumber = "+974 66261000";
 
   return (
     <header className="bg-green-800 text-white py-2 px-4 flex justify-between items-center flex-col sm:flex-row sm:space-x-4">
@@ -26,10 +21,10 @@ export default function Header() {
         <div className="flex items-center space-x-2">
           <Phone className="h-4 w-4" />
           <a
-            href={`tel:${phoneNumbers[0].replace(/\s+/g, "")}`}
+            href={`tel:${phoneNumber.replace(/\s+/g, "")}`}
             className="hover:underline"
           >
-            {phoneNumbers[0]}
+            {phoneNumber}
           </a>
         </div>
       </div>

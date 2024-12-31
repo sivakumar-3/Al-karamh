@@ -1,4 +1,4 @@
-import { Facebook, Twitter, Instagram } from "lucide-react";
+import { Facebook, Instagram} from "lucide-react";
 import { Link } from "react-router-dom";
 import defaultLogo from "../../images/logo.png";
 import productData from "../../data/products.json";
@@ -114,6 +114,14 @@ export default function Footer() {
             <h3 className="text-xl font-semibold mb-4">{t.customerCare}</h3>
             <ul className="grid grid-cols-2 sm:grid-cols-1 gap-2 sm:gap-3">
               <li>
+              <a
+                  href="tel:+974 66261000"
+                  className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
+                >
+                  {t.call}
+                </a>
+              </li>
+              <li>
                 <a
                   href="mailto:hamad@alkaramh.com"
                   className="text-base hover:text-[#4D7C0F] transition-colors duration-200"
@@ -174,7 +182,9 @@ export default function Footer() {
               rel="noopener noreferrer"
               className="hover:text-[#4D7C0F] transition-colors duration-200"
             >
-              <Twitter size={24} />
+            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 48 48" id="x-twitter">
+              <path fill="#fff" d="M36.6526 3.8078H43.3995L28.6594 20.6548L46 43.5797H32.4225L21.7881 29.6759L9.61989 43.5797H2.86886L18.6349 25.56L2 3.8078H15.9222L25.5348 16.5165L36.6526 3.8078ZM34.2846 39.5414H38.0232L13.8908 7.63406H9.87892L34.2846 39.5414Z"></path>
+            </svg>   
             </a>
             <a
               href="https://www.instagram.com/al_karamh/profilecard/?igsh=d3k3a2E2czAxaHJ6"
@@ -184,6 +194,14 @@ export default function Footer() {
             >
               <Instagram size={24} />
             </a>
+            <a
+            href="https://www.tiktok.com/@al_karamh?_t=8sXG0ara2Do&_r=1"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="hover:text-[#4D7C0F] transition-colors duration-200"
+          >
+           <svg fill="#fff" width="24px" height="24px" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M19.589 6.686a4.793 4.793 0 0 1-3.77-4.245V2h-3.445v13.672a2.896 2.896 0 0 1-5.201 1.743l-.002-.001.002.001a2.895 2.895 0 0 1 3.183-4.51v-3.5a6.329 6.329 0 0 0-5.394 10.692 6.33 6.33 0 0 0 10.857-4.424V8.687a8.182 8.182 0 0 0 4.773 1.526V6.79a4.831 4.831 0 0 1-1.003-.104z"/></svg>
+          </a>
           </div>
         </div>
       </div>
