@@ -26,11 +26,7 @@ export default function Welcome() {
             alt="MD picture"
             className="w-full md:w-auto max-w-full rounded-md shadow-md h-auto md:h-[450px]"
           />
-          <img
-            src="/images/products/siblings_image.jpg"
-            alt="siblings picture"
-            className="w-full md:w-auto max-w-full rounded-md shadow-md h-auto md:h-[450px]"
-          />
+          
         </div>
       </div>
 
