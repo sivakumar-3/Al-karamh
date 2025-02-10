@@ -8,8 +8,8 @@ import hero5 from './../../images/home/hero5.jpg'
 import hero6 from './../../images/home/hero6.jpg'
 import hero7 from './../../images/home/hero7.jpg'
 import hero8 from './../../images/home/hero8.jpg'
-import hero8 from './../../images/home/hero9.jpg'
-import hero8 from './../../images/home/hero0.jpg'
+import hero9 from './../../images/home/hero9.jpg'
+import hero0 from './../../images/home/hero0.jpg'
 
 export default function Hero({ banners = { desktop: [], mobile: [] } }) {
   const [currentSlide, setCurrentSlide] = useState(0);
