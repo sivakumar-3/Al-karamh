@@ -18,8 +18,8 @@ export default function Hero({ banners = { desktop: [], mobile: [] } }) {
 
   // Determine slides based on device type (desktop or mobile)
   const slides = isMobile 
-    ? (banners.mobile?.length > 0 ? banners.mobile : [hero1,hero2,hero3,hero4,hero5,hero6,hero7,hero8]) 
-    : (banners.desktop?.length > 0 ? banners.desktop : [hero1,hero2,hero3,hero4,hero5,hero6,hero7,hero8]);
+    ? (banners.mobile?.length > 0 ? banners.mobile : [hero1,hero2,hero3,hero4,hero5,hero6,hero7,hero8,hero9,hero0]) 
+    : (banners.desktop?.length > 0 ? banners.desktop : [hero1,hero2,hero3,hero4,hero5,hero6,hero7,hero8,hero9,hero0]);
 
   // Adjust `isMobile` when window resizes
   useEffect(() => {
